@@ -243,8 +243,40 @@ namespace Assignment_15
             //} 
             #endregion
 
+            #region 28
+            //var containsEi = words.Any(w => w.Contains("ei"));
+            //Console.WriteLine(containsEi); 
+            #endregion
+
+            #region 29
+            //var allProductsInStockByCategory = ListGenerators.ProductList.GroupBy(p => p.Category).Where(c => c.All(p => p.UnitsInStock > 0)).Select(p => new
+            //{
+            //    Category = p.Key,
+            //    Products = p.ToList()
+            //}).ToList();
+
+            //allProductsInStockByCategory.ForEach(c =>
+            //{
+            //    Console.WriteLine($"\n{c.Category}\n===================================================");
+            //    c.Products.ForEach(Console.WriteLine);
+            //}); 
+            #endregion
+
+            #region 30
+            //var anyProductsOutOfStockByCategory = ListGenerators.ProductList.GroupBy(p => p.Category).Where(c => c.Any(p => p.UnitsInStock == 0)).Select(p => new
+            //{
+            //    Category = p.Key,
+            //    Products = p.ToList()
+            //}).ToList();
+
+            //anyProductsOutOfStockByCategory.ForEach(c =>
+            //{
+            //    Console.WriteLine($"\n{c.Category}\n===================================================");
+            //    c.Products.ForEach(Console.WriteLine);
+            //}); 
+            #endregion
+
 
         }
-
     }
 }

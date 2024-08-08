@@ -159,6 +159,48 @@ namespace Assignment_15
             //    Console.WriteLine(item);
             //} 
             #endregion
+
+            #region 18
+            //var uniqueCategory = ListGenerators.ProductList.Distinct();
+            //foreach (var item in uniqueCategory)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region 19
+            //var uniqueFirstLetters = ListGenerators.CustomerList.Select(c => c.CustomerName[0]).Union(ListGenerators.ProductList.Select(p => p.ProductName[0])).Distinct().ToList();
+            //foreach (var item in uniqueFirstLetters)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region 20
+            //var commonFirstLetters = ListGenerators.CustomerList.Select(c => c.CustomerName[0]).Intersect(ListGenerators.ProductList.Select(p => p.ProductName[0])).ToList();
+            //foreach (var item in commonFirstLetters)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region 21
+            //var productFirstLettersNotInCustomer = ListGenerators.ProductList.Select(p => p.ProductName[0]).Except(ListGenerators.CustomerList.Select(c => c.CustomerName[0])).ToList();
+            //foreach (var item in productFirstLettersNotInCustomer)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region 22
+            //var lastThreeCharacters = ListGenerators.ProductList.Select(p => p.ProductName.Substring(p.ProductName.Length - 3)).Concat(ListGenerators.CustomerList.Select(c => c.CustomerName.Substring(c.CustomerName.Length - 3))).ToList();
+            //foreach (var item in lastThreeCharacters)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+
         }
 
     }

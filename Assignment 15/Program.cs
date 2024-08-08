@@ -1,4 +1,5 @@
 ﻿using ASSLINQ;
+using System.Text.RegularExpressions;
 
 namespace Assignment_15
 {
@@ -276,7 +277,42 @@ namespace Assignment_15
             //}); 
             #endregion
 
+            //grouping numbers list
+            List<int> numbers2 = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 
+            #region 31
+            //var groupNumbersByRemainderDividedBy5 = numbers2.GroupBy(n => n % 5);
+
+            //int i = 0;
+            //foreach (var group in groupNumbersByRemainderDividedBy5)
+            //{
+            //    Console.WriteLine($"Numbers with a remainder of {i} when divided by 5");
+            //    foreach (var item in group)
+            //    {
+            //        Console.WriteLine(item);
+            //    }
+            //    i++;
+            //} 
+            #endregion
+
+            #region 32
+            //var groupByFirstLetter = words.GroupBy(w => w.FirstOrDefault()); 
+            #endregion
+
+            #region 33
+            //String[] Arr3 = { "from", "salt", "earn", "last", "near", "form" };
+
+            //var GroupByCharacters = Arr3.GroupBy(w => w, new MyComparer());
+
+            //foreach (var group in GroupByCharacters)
+            //{
+            //    foreach (var item in group)
+            //    {
+            //        Console.WriteLine(item);
+            //    }
+            //    Console.WriteLine(".........");
+            //} 
+            #endregion
         }
     }
 }

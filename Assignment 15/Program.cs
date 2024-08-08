@@ -200,6 +200,49 @@ namespace Assignment_15
             //} 
             #endregion
 
+            #region 23
+            //var first3Orders = ListGenerators.CustomerList.Where(p => p.Region != null ? p.Region.Equals("WA") : false).Take(3);
+            //foreach (var item in first3Orders)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            #region 24
+            //var skip2Orders = ListGenerators.CustomerList.Where(p => p.Region != null ? p.Region.Equals("WA") : false).Skip(2);
+            //foreach (var item in skip2Orders)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            //Array for next 3 question
+            int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            #region 25
+            //var takeUntil = numbers.TakeWhile((n, i) => n > i);
+            //foreach (var item in takeUntil)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            #region 26
+            //var skipUntil = numbers.SkipWhile(n => n % 3 != 0);
+            //foreach (var item in skipUntil)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            #region 27
+            //var skipUntil2 = numbers.SkipWhile((n, i) => n > i);
+            //foreach (var item in skipUntil2)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
 
         }
 

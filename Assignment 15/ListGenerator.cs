@@ -7,6 +7,22 @@ using System.Xml.Linq;
 
 namespace ASSLINQ
 {
+    class MyComparer : IComparer<int>
+    {
+        public int Compare(int x, int y)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    class UnitInStockComparer : IComparer<Product>
+    {
+        public int Compare(Product? x, Product? y)
+        {
+            return x.UnitsInStock.CompareTo(y.UnitsInStock);
+        }
+    }
+
     class Product
     {
         public long ProductID { get; set; }
@@ -76,9 +92,9 @@ namespace ASSLINQ
             ProductList = new List<Product>()
             {
 
-                new Product() {ProductID = 1, ProductName = "Chai", Category = "Beverages",
-                    UnitPrice = 18.00M, UnitsInStock = 100},
-                new Product{ ProductID = 2, ProductName = "Chang", Category = "Beverages",
+              new Product() {ProductID = 1, ProductName = "Chai", Category = "Beverages",
+                UnitPrice = 18.00M, UnitsInStock = 100},
+              new Product{ ProductID = 2, ProductName = "Chang", Category = "Beverages",
                 UnitPrice = 19.0000M, UnitsInStock = 17 },
               new Product{ ProductID = 3, ProductName = "Aniseed Syrup", Category = "Condiments",
                 UnitPrice = 10.0000M, UnitsInStock = 13 },
